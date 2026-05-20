@@ -1,0 +1,237 @@
+<!doctype html>
+<html>
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <script src="https://cdn.jsdelivr.net/npm/@tailwindcss/browser@4"></script>
+    <link rel="stylesheet" href="assets/style.css">
+  </head>
+  <body id="body">
+    <nav class="flex items-center justify-between px-10 mt-4 nav">
+        <div class="flex items-center gap-6">
+            <img src="assets/Logo.png" alt="logo" class="w-12">
+            <div class="text-4xl lg"><p class="font-bold">BzMe</p></div>
+        </div>
+        <div class="text-3xl menu">
+            <ul class="flex flex-row gap-10">
+                <li><a href="#">Home</a></li>
+                <li><a href="#">About</a></li>
+                <li><a href="#">Service</a></li>
+                <li><a href="#">Contact</a></li>
+                <li><a href="#">Blog</a></li>
+            </ul>
+        </div>
+        <div class="flex items-center gap-4">
+            <select name="warna" id="warna" class="bg-[#FF9335] text-white rounded px-8 py-2">
+                <option value="white">Putih</option>
+                <option value="black">Hitam</option>
+            </select>
+            <div class="relative">
+                <button id="signupBtn" class="bg-[#FF9335] text-white px-6 py-2 rounded hover:bg-blue-600">
+                    Sign Up
+                </button>
+                <div id="dropdownMenu" class="hidden absolute right-0 mt-2 bg-  [#FF9335] text-gray-700 rounded shadow-lg shadow-[#FF9335] w-32 py-2 z-50">
+                    <p id="btnDaftar" class="px-4 py-2 hover:bg-orange-500 cursor-pointer">Daftar</p>
+                    <p onclick="alert('soon')" class="px-4 py-2 hover:bg-orange-500 cursor-pointer">Masuk</p>
+                </div>
+            </div>
+        </div>
+    </nav>
+    <div id="modalDaftar" class="fixed inset-0 bg-black/50 hidden items-center justify-center z-50">
+        <div class="card bg-white p-6 rounded-xl w-80 relative">
+            <button id="closeModal" class="absolute top-2 right-3 text-xl">&times;</button>
+            <h2 class="text-xl font-bold mb-4">Daftar</h2>
+            <input id="nama" type="text" placeholder="Nama" class="w-full border p-2 mb-3 rounded">
+            <p id="errorNama" class="text-red-500 text-sm mb-2 hidden"></p>
+            <input id="email" type="email" placeholder="Email" class="w-full border p-2 mb-3 rounded">
+            <p id="errorEmail" class="text-red-500 text-sm mb-2 hidden"></p>
+            <input id="password" type="password" placeholder="Password" class="w-full border p-2 mb-3 rounded">
+            <p id="errorPassword" class="text-red-500 text-sm mb-3 hidden"></p>
+            <button id="submitBtn" class="w-full bg-[#FF9335] text-white py-2 rounded">
+                Daftar
+            </button>
+        </div>
+    </div>
+    <div class="flex items-center justify-between mt-10 pt-10 px-10 gap-16">
+        <div class="max-w-lg">
+            <h2 class="text-7xl text-black leading-tight">
+                We Create <br> 
+                <span>Solutions</span> For 
+                <br> Your Business
+            </h2>
+            <p class="text-lg text-gray-700 mt-6 mb-8">We provide intelligent technology solutions to <br> 
+            optimize efficiency and accelerate the growth of <br> your business operations.</p>
+            <button class="bg-[#FF9335] text-white px-6 py-2 rounded-lg hover:bg-blue-600">
+                Get Started
+            </button>
+        </div>
+        <div>
+            <img src="assets/1.png" alt="" class="w-[450px] relative -top-10">
+        </div>
+    </div>
+    <div class="flex flex-col justify-center mt-20" >
+        <div>
+            <h1 class="text-5xl text-center mb-4" style="font-family: 'Franklin Gothic Medium', 'Arial Narrow', Arial, sans-serif;">We Provide The Best <span>Service</span></h1>
+            <p class="text-center text-gray-600 text-xl">We deliver high-quality technology services specifically designed to enhance your <br> business productivity and scalability in a sustainable way.</p>
+        </div>
+        <div class="flex justify-between px-20 mt-8">
+            <div class="card bg-white p-6 rounded-lg shadow-lg shadow-purple-500 m-4 h-60 w-60">
+                <div class="bg-[#FFD47E] rounded-full p-2 w-12 h-12">
+                    <img src="assets/icon 1.png" alt="">
+                </div>
+                <h2 class="font-bold">Seo/Sem</h2>
+                <p class="text-sm text-gray-600 line-clamp-3">Lorem ipsum dolor sit amet consectetur adipiscing elit. Dolor sit amet consectetur adipiscing elit quisque faucibus.</p>
+                <button class="bg-[#8A38F5] text-[#FFD47E] px-6 py-2 rounded-lg hover:bg-blue-900 mt-4 block mx-auto">
+                    Click Here
+                </button>
+            </div>
+                <div class="card bg-white p-6 rounded-lg shadow-lg shadow-purple-500 m-4 h-60 w-60">
+                <div class="bg-[#FFD47E] rounded-full p-2 w-12 h-12">
+                    <img src="assets/icon 1.png" alt="">
+                </div>
+                <h2 class="font-bold">Viral Campaign</h2>
+                <p class="text-sm text-gray-600 line-clamp-3">Lorem ipsum dolor sit amet consectetur adipiscing elit. Dolor sit amet consectetur adipiscing elit quisque faucibus.</p>
+                <button class="bg-[#8A38F5] text-[#FFD47E] px-6 py-2 rounded-lg hover:bg-blue-900 mt-4 block mx-auto">
+                    Click Here
+                </button>
+            </div>
+                <div class="card bg-white p-6 rounded-lg shadow-lg shadow-purple-500 m-4 h-60 w-60">
+                <div class="bg-[#FFD47E] rounded-full p-2 w-12 h-12">
+                    <img src="assets/icon 2.png" alt="">
+                </div>
+                <h2 class="font-bold">Marketing</h2>
+                <p class="text-sm text-gray-600 line-clamp-3">Lorem ipsum dolor sit amet consectetur adipiscing elit. Dolor sit amet consectetur adipiscing elit quisque faucibus.</p>
+                <button class="bg-[#8A38F5] text-[#FFD47E] px-6 py-2 rounded-lg hover:bg-blue-900 mt-4 block mx-auto">
+                    Click Here
+                </button>
+            </div>
+                <div class="card bg-white p-6 rounded-lg shadow-lg shadow-purple-500 m-4 h-60 w-60">
+                <div class="bg-[#FFD47E] rounded-full p-3 w-12 h-12">
+                    <img src="assets/icon 3.png" alt="">
+                </div>
+                <h2 class="font-bold">Others</h2>
+                <p class="text-sm text-gray-600 line-clamp-3">Lorem ipsum dolor sit amet consectetur adipiscing elit. Dolor sit amet consectetur adipiscing elit quisque faucibus.</p>
+                <button class="bg-[#8A38F5] text-[#FFD47E] px-6 py-2 rounded-lg hover:bg-blue-900 mt-4 block mx-auto">
+                    Click Here
+                </button>
+            </div>
+        </div>
+    </div>
+    <div class="flex items-start justify-between mt-40 p-10 bg-[#FFD47E]">
+        <div class="max-w-lg">
+            <img src="assets/2.png" alt="" class="w-[450px]">            
+        </div>
+        <div>
+            <div class="pr-40 mt-14">
+                <h2 class="text-5xl font-serif font-bold items-start">Simple <span>Solutions!</span></h2>
+                <p class="text-2xl mt-6"> We understand that no two <br> are alike. That’s why we take the time to truly <br> understand your unique goals, challenges, <br> and vision.</p>
+            </div>
+            <div class="flex justify-between w-110 mt-5">
+                <button class="bg-[#FF9335] text-white px-14 py-3 rounded-lg hover:bg-orange-700">
+                  Get Started  
+                </button>
+                <button class="border-2 border-[#8A38F5] text-[#8A38F5] px-14 py-2 rounded-lg hover:bg-blue-200">
+                    Read More
+                </button>
+            </div>
+        </div>
+    </div>
+    <div class="flex items-center justify-between px-40 mt-20 mb-20">
+        <div>
+            <h2 class="font-bold text-4xl">Our <span>Agency</span></h2>
+            <p class="text-2xl mt-4">We believe in the power of data. Our <br> analytics-driven approach allows <br> us to make informed <br> Let's turn your data into actionable <br> insights adored Solutions for Your <br> Business</p>
+            <button class="bg-[#FF9335] font-bold text-white text-lg rounded-lg hover:bg-orange-700 px-12 py-2 mt-2">
+                Read More
+            </button>
+        </div>
+        <div class="max-w-lg">
+            <img src="assets/3.png" alt="" class="w-[450px]">
+        </div>
+    </div>
+    <div class="flex flex-col justify-center items-center gap-6 mt-10 mb-28">
+        <div>
+            <h2 class="text-4xl font-bold text-center">What <span class="span">Clients</span> Say!</h2>
+            <p class="text-2xl text-gray-500 text-center mt-2">See How Our Digital Marketing Agency Helped Clients <br> Achieve Their Goals</p>
+        </div>
+        <div class="flex items-center justify-center gap-6 p-4 mt-8">
+            <div class="card bg-white shadow-lg shadow-gray-400 rounded-lg h-40 w-72 p-4 hover:scale-110 transition">
+                <h2 class="font-bold text-xl text-[#FF9335]">Johnny Suh</h2>
+                <p class="text-sm text-gray-500 -mt-1">Executive CEO</p>
+                <p class="line-clamp-3 text-xs mt-2">Lorem ipsum, dolor sit amet consectetur adipisicing elit. Sequi, cumque beatae? Cum minus exercitationem sapiente distinctio, consequatur laboriosam corrupti minima suscipit enim aliquam accusantium vel non dolorem vero, voluptas quas?</p>
+                <div class="flex items-center gap-1 [&>img]:w-6 [&>img]:h-6">
+                    <img src="assets/Star 2.png" alt="">
+                    <img src="assets/Star 2.png" alt="">
+                    <img src="assets/Star 2.png" alt="">
+                    <img src="assets/Star 1.png" alt="">
+                    <img src="assets/Star 1.png" alt="">
+                </div>
+            </div>
+            <div class="card bg-white shadow-lg shadow-gray-400 rounded-lg h-40 w-72 p-4 hover:scale-110 transition">
+                <h2 class="font-bold text-xl text-[#FF9335]">Nashley Juan</h2>
+                <p class="text-sm text-gray-500 -mt-1">Executive CEO</p>
+                <p class="line-clamp-3 text-xs mt-2">Lorem ipsum, dolor sit amet consectetur adipisicing elit. Sequi, cumque beatae? Cum minus exercitationem sapiente distinctio, consequatur laboriosam corrupti minima suscipit enim aliquam accusantium vel non dolorem vero, voluptas quas?</p>
+                <div class="flex items-center gap-1 [&>img]:w-6 [&>img]:h-6">
+                    <img src="assets/Star 2.png" alt="">
+                    <img src="assets/Star 2.png" alt="">
+                    <img src="assets/Star 2.png" alt="">
+                    <img src="assets/Star 2.png" alt="">
+                    <img src="assets/Star 1.png" alt="">
+                </div>
+            </div>
+            <div class="card bg-white shadow-lg shadow-gray-400 rounded-lg h-40 w-72 p-4 hover:scale-110 transition">
+                <h2 class="font-bold text-xl text-[#FF9335]">Mark Z</h2>
+                <p class="text-sm text-gray-500 -mt-1">Executive CEO</p>
+                <p class="line-clamp-3 text-xs mt-2">Lorem ipsum, dolor sit amet consectetur adipisicing elit. Sequi, cumque beatae? Cum minus exercitationem sapiente distinctio, consequatur laboriosam corrupti minima suscipit enim aliquam accusantium vel non dolorem vero, voluptas quas?</p>
+                <div class="flex items-center gap-1 [&>img]:w-6 [&>img]:h-6">
+                    <img src="assets/Star 2.png" alt="">
+                    <img src="assets/Star 2.png" alt="">
+                    <img src="assets/Star 2.png" alt="">
+                    <img src="assets/Star 2.png" alt="">
+                    <img src="assets/Star 2.png" alt="">
+                </div>
+            </div>
+        </div>
+    </div>
+    <div class="flex items-center justify-between rounded-lg bg-[#FF9335] h-14 w-[80%] mx-auto px-12 relative z-10 -mb-7">
+        <h1 class="text-white text-xl font-semibold">Ready To Get Started?</h1>
+        <button class="border-2 border-white text-white px-8 rounded-lg text-xl font-semibold">
+            Contact Us
+        </button>
+    </div>
+    <footer class="bg-[#FFD47E] p-20 px-40 relative z-0">
+        <div class="flex justify-between items-start">
+            <div class="flex items-center gap-3 py-20 px-12">
+                <img src="assets/Logo.png" class="w-12">
+                <h1 class="text-3xl text-[#8A38F5] font-bold">BzMe</h1>
+            </div>
+            <div class="flex gap-20 pt-12">
+                <div>
+                    <h4 class="font-semibold mb-3">Company</h4>
+                    <ul class="space-y-2">
+                        <li>About</li>
+                        <li>Contact</li>
+                        <li>Careers</li>
+                        <li>Team</li>
+                    </ul>
+                </div>
+                <div>
+                    <h4 class="font-semibold mb-3">Design</h4>
+                    <ul class="space-y-2">
+                        <li>Find a Designer</li>
+                        <li>Discover Inspiration</li>
+                        <li>Pricing</li>
+                    </ul>
+                </div>
+                <div>
+                    <h4 class="font-semibold mb-3">Support</h4>
+                    <ul class="space-y-2">
+                        <li>Privacy Police</li>
+                        <li>Terms</li>
+                    </ul>
+                </div>
+            </div>
+        </div>
+    </footer>
+    <script src="script.js"></script>
+  </body>
+</html>
